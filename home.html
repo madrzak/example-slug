@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slugify</title>
+
+    <script src="bundle.js"></script>
+
+    <script src="speakingurl.min.js"></script>
+    <script src="slugify.min.js"></script>
+</head>
+<body>
+
+<input id="title" type="text" style="width: 600px"/>
+
+<br>
+<br>
+
+<input id="slug" type="text" style="width: 600px"/>
+
+<script>
+    jQuery(function ($) {
+        $("#slug").slugify("#title", {
+            separator: '-' // If you want to change separator from hyphen (-) to underscore (_).
+        });
+    });
+</script>
+
+</body>
+</html>
